@@ -18,7 +18,6 @@ class CreateCitiesTable extends Migration
 
             $table->string('name');
             $table->string('ibge_code', 20)->nullable();
-            $table->integer('state_id')->unsigned();
             $table->foreignId('state_id')->constrained();
 
             $table->timestamps();
