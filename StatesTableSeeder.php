@@ -11,7 +11,7 @@ class StatesTableSeeder extends Seeder {
      */
     public function run()
     {
-        DB::table('states')->delete();
+        DB::table('states')->truncate();
 
         DB::table('states')->insert([
             ['id' => 1, 'name' => 'Acre', 'abbreviation' => 'AC'],

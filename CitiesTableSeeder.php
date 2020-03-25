@@ -11,7 +11,7 @@ class CitiesTableSeeder extends Seeder {
      */
     public function run()
     {
-        DB::table('cities')->delete();
+        DB::table('cities')->truncate();
 
         DB::table('cities')->insert([
             ['state_id' => 1, 'ibge_code' => '1200013', 'name' => 'Acrelândia'],
